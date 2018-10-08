@@ -92,7 +92,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Neward & Associates";
 				TargetAttributes = {
 					9F0A76CB1F84D60A0048FAB8 = {
