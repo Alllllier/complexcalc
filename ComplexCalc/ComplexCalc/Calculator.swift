@@ -14,6 +14,10 @@ class Calculator {
         return lhs + rhs
     }
     
+    func add(_ numbers: [Int]) -> Int {
+        return numbers.reduce(0, +)
+    }
+    
     func subtract(lhs: Int, rhs: Int) -> Int {
         return lhs - rhs
     }
@@ -22,7 +26,23 @@ class Calculator {
         return lhs * rhs
     }
     
+    func multiply(_ numbers: [Int]) -> Int {
+       return numbers.reduce(0, *)
+    }
+    
     func divide(lhs: Int, rhs: Int) -> Int {
         return lhs / rhs
+    }
+    
+    func mathOp(lhs: Int, rhs: Int, op: (Int, Int) -> Int) -> Int {
+        return op(lhs, rhs)
+    }
+    
+    func count(_ numbers: [Int]) -> Int {
+        return numbers.count
+    }
+    
+    func avg(_ numbers: [Int]) -> Int {
+        return numbers.reduce(0, +) / numbers.count
     }
 }
